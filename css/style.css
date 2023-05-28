@@ -1,0 +1,189 @@
+
+
+/* colores globales para simplificarme la vida - minificado */
+.t-morado{color:#a996c7;}.t-celeste{color:#bbdef1;}.t-amarillo{color:#eeeb8f;}.t-verde{color:#a3d2b9;}.t-naranjo{color:#f1be9d;}.t-rosado{color:#e48db5;}
+/* colores para los background */
+.bg-morado{background-color:#a996c7 !important;}.bg-celeste{background-color:#bbdef1 !important;}.bg-amarillo{background-color:#eeeb8f !important;}.bg-verde{background-color:#a3d2b9 !important;}.bg-naranjo{background-color:#f1be9d !important;}.bg-rosado{background-color:#e48db5 !important;}
+
+/* esto oculta el topbar morado en mobile */
+@media only screen and (max-width: 967px) {
+    /* Estilos para dispositivos móviles */
+    .topbar{
+        display: none;
+    }
+    .laptops{
+        display: none;
+    }
+    }
+/* para ocultar en disp grandes - ojo que también tengo una css con estilos puntuales. esto podría colocarlo en esa hoja, pero para no dejar la embarrá, o confundir, prefiero que quede acá. para futuros proyectos por lo menos ya aprendí jajajaja */
+ @media (min-width: 768px) and (max-width: 2000px) {
+    .mobile{
+        display: none;
+    }
+ }
+/* ================ estilos generales ================ */
+
+/* tipografía global para que después en caso de necesitar jerarquizar, sólo le agrego un "font weight". en caso de utilizar más de una o 2 tipografías, usar esto con cuidado xD o colocar cada tipografía en cada clase necesaria (se podría hacer como dejé los colores. ya que suele utilizarse bastante) */
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* propiedades a la topbar morada, la principal, esa que lleva las redes sociales */
+.topbar{
+    background-color: #a996c7;
+}
+.topbar ul li a{
+    color: #eeeb8f;
+    font-weight: 600;
+}
+.topbar ul li a:hover{
+    color: #fff;
+}
+/* la barra principal, la que lleva tanto el logo como el menú */
+.barra-ppal{
+    background: #eaf6fd;
+}
+.fund{
+    color: #a3d2b9;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.adop{
+    color: #e48db5;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.barra-ppal ul li a{
+    color: #e48db5;
+    font-weight: 800;
+}
+/* esto simplemente es para que se vea mas bonito, ya que sino le colocara esto, se vería azul y fome */
+.barra-ppal ul li a:hover{
+    color: #a996c7;
+}
+/* esto es para que el dropdown menu cambie el color predeterminado del bootstrap, para probar, lo que pueden hacer es borrar este css y actualizar la página, luego ir al menú, presionar el dropdown y seleccionar algún ítem de los 3 que hay. */
+.barra-ppal ul li a:visited{
+    background-color: #eaf6fd;
+}
+.naranjo{
+    color: #ea905e;
+}
+.t1{
+    font-weight: 600;
+}
+.t2{
+    font-weight: 780;
+    font-size: 2rem;
+}
+.t3{
+    font-size: 1.1rem;
+}
+.t4{
+    font-weight: 700;
+}
+.donaciones{
+    background-color: #eeeb8f;
+}
+.bg-morado:hover{
+    background-color: #7b55b9 !important;
+}
+
+.perrin{
+    background-color: #83bfc5;
+    border: 10px solid #83bfc5;
+    border-radius: 2rem 5rem;
+}
+.perrin img{
+    border-radius: 2rem 5rem;
+}
+.calendario{
+    color: #ea905e;
+    font-size: 1.7rem;
+}
+.n-animal{
+    color: #ea905e;
+    font-size: 2rem;
+    font-weight: 800;
+    
+    margin: 0px;
+    padding: 0px;
+    /* padding: 0px; */
+}
+.texto-pequeno{
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+}
+.desc-animal{
+    font-size: .8rem;
+}
+.info-animal{
+    background-color: #ea905e;
+}
+.info-animal:hover{
+    background-color: #e87030 !important;
+}
+.justify{
+    text-align: justify;
+}
+.rosado{
+    background-color: #e48db5;
+    color: #fff;
+    border-radius: 2rem;
+}
+.rosado:hover{
+    background-color: #e46ba3 !important;
+    color: #fff;
+    border-radius: 2rem;
+}
+.calendario-lg{
+    color: #ea905e;
+    font-size: 2.7rem;
+}
+.display-7{
+    font-size: 1.4rem;
+}
+.flecha{
+    font-size: 5rem;
+}
+.table-celeste{
+    background-color: #e9adc9;
+}
+.fotos-gal{
+    width: 100%;
+}
+.fotos-gal img{
+    border: 3px solid #ecb496;
+    border-radius: 1rem;
+    opacity: .9;
+}
+.fotos-gal:hover{
+    background: #ecb496;
+    border-radius: 1rem;
+    width: 100%;
+}
+p.t-verde{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.titulos{
+    font-size:2.5rem;
+    font-weight: 800;
+}
+/* estilos para el dropdown de usuario. acá pueden cambiarle la clase "pato" y reemplazarla */
+.pato ul li a:visited{
+    background-color: #9d74dd;
+}
+.bg-pato{
+    background-color: #a996c7;
+}
+/* link morado para el formulario de contacto */
+.link-mora a{
+    color: #e46ba3;
+    font-weight: 700;
+}
+
+.titulos-form{
+    color: #e46ba3;
+    font-weight: 700;
+}

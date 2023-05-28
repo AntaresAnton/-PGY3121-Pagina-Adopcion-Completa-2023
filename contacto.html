@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta text="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="topbar pt-3">
+        <div class="container ">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-md-6 ">
+                    <ul class="nav">
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-regular fa-envelope"></i> adopta@adopta.cl</b></a></li>
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-solid fa-phone"></i> adopta@adopta.cl</b></a></li>
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-solid fa-street-view"></i> adopta@adopta.cl</b></a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 align-items-end">
+                    <ul class="nav">
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-facebook-f"></i> </a></li>
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-instagram"></i> </a></li>
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-twitter"></i> </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 pato">
+                    <ul class="nav ">
+                        <li class="nav-item dropdown ">
+                            <!-- acá por orden de clases es lo siguiente: la primera clase es para que no aparezca con decoraciones el enlace, la otra clase es para que se comporte como menú desplegable y muestre la flecchita que sirve para identificarlo (el triangulito que sale en el menú) -->
+                            <!-- el ID anunciosdropdown es un id que uno le asigna para que pueda "llamar" al div de más abajo (al aria-labelledby) -->
+                            <!-- el "data-bstoggle" lo que hace es que llame a la librería de js de bootstrap. esto es muy similar (por no decir igual) al atributo .toggle() de Jquery. en simples palabras, convierte un botón para que active o desactive algo (como un switch) -->
+                            <a class="text-decoration-none" href="#" id="userpato" data-bs-toggle="dropdown" aria-haspopup="true" aria-bs-expanded="false">
+                                <p><i class="fa fa-regular fa-user"></i> Bienvenido, <span>Patricio</span> <i class="fa fa-solid fa-caret-down"></i></p>
+                            </a>
+                            <div class="dropdown-menu bg-pato morado" aria-labelledby="userpato">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Donaciones</a>
+                                <a class="dropdown-item" href="#michimado">Michimado del mes</a>
+                            </div>
+                        </li>
+                        <!-- fin del nav-item dropdown -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <header>
+        <div class="barra-ppal navbar navbar-expand-lg">
+           <div class="container">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <!-- este logo se oculta en computadores y se muestra en celulares -->
+                 <a class="text-decoration-none mobile" href="index.html"><span class="fund text-capitalize">fundación <br><span class="adop text-uppercase">adopta</span></span></a>
+                 <!-- esta sería la barra normalita, con la diferencia que al logo de abajo se le aplica un media query para que se oculte cuando estemos en versiones mobile y se muestre en versiones grandes -->
+               <div class="row justify-content-between collapse navbar-collapse" id="navbarTogglerDemo01">
+                   <div class="col-lg-2 col-md-2">
+                       <div class="logo text-center">
+                           <a class="text-decoration-none laptops" href="index.html"><span class="fund text-capitalize">fundación <br><span class="adop text-uppercase">adopta</span></span></a>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3"></div>
+                   <div class="col-lg-7 col-md-7 align-self-center">
+                       <ul class="nav justify-content-between text-capitalize text-center">
+                           <li><a class="text-decoration-none link-menu" href="index.html">inicio</a></li>
+                           <!-- inicio del nav-item dropdown -->
+                        <li class="nav-item dropdown">
+                            <!-- acá por orden de clases es lo siguiente: la primera clase es para que no aparezca con decoraciones el enlace, la otra clase es para que se comporte como menú desplegable y muestre la flecchita que sirve para identificarlo (el triangulito que sale en el menú) -->
+                            <!-- el ID anunciosdropdown es un id que uno le asigna para que pueda "llamar" al div de más abajo (al aria-labelledby) -->
+                            <!-- el "data-bstoggle" lo que hace es que llame a la librería de js de bootstrap. esto es muy similar (por no decir igual) al atributo .toggle() de Jquery. en simples palabras, convierte un botón para que active o desactive algo (como un switch) -->
+                            <a class="text-decoration-none dropdown-toggle" href="#" id="anunciosdropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-bs-expanded="false">
+                            Buscan un hogar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="anunciosdropdown">
+                                <a class="dropdown-item" href="#">Perritos</a>
+                                <a class="dropdown-item" href="#">Gatitos</a>
+                                <a class="dropdown-item" href="#michimado">Michimado del mes</a>
+                            </div>
+                        </li>
+                        <!-- fin del nav-item dropdown -->
+                           <li><a class="text-decoration-none link-menu" href="#adopta">adopta</a></li>
+                           <li><a class="text-decoration-none link-menu" href="#donaciones">Dona Ahora</a></li>
+                           <li><a class="text-decoration-none link-menu" href="contacto.html">Contacto</a></li>
+                           
+                       </ul>
+                   </div>
+               </div><!-- row justify -->
+           </div><!-- container -->
+       </div><!-- barra ppal -->
+     </header><!-- fin header -->
+
+     <div class="titulo-seccion-pag pt-5">
+        <div class="container text-center text-capitalize">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p class="t-verde">fundacion <span class="t-rosado">adopta</span></p>
+                    <h1 class="t-morado pb-4"><i class="fa fa-solid fa-paw"></i>  Contáctanos  <i class="fa fa-solid fa-paw"></i></h1>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="formularios py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-8 col-md-8">
+                    <!-- al form directamente le agregué la clase row, además del metodo get. Eso quiere decir que automaticamente se convierte en un row la sección de formulario, además del método get para enviar los datos y que se muestren (por el momento) dentro del navegador. esto mayoritariamente se edita en php (por que sale más fácil, supongo) con los métodos post del mismo php -->
+                    <form class="row" method="get" action="contacto.html">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label titulos-form">Nombre</label>
+                                <!-- para que despliegue los nombres en el navegador, o lo que uno va colocando en cada placeholder, se le coloca "name" y el nombre correspondiente a cada casilla. lo otro. esto está separado en columnas de 6, para que se genere un orden -->
+                                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre-ayuda">
+                                <div id="nombre-ayuda" class="form-text"></div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label titulos-form">Apellidos</label>
+                                <!-- para que despliegue los nombres en el navegador, o lo que uno va colocando en cada placeholder, se le coloca "name" y el nombre correspondiente a cada casilla. lo otro. esto está separado en columnas de 6, para que se genere un orden -->
+                                <input type="text" class="form-control" id="apellido" name="Apellido" aria-describedby="nombre-ayuda">
+                                <div id="nombre-ayuda" class="form-text"></div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label titulos-form">Teléfono</label>
+                                <!-- para que despliegue los nombres en el navegador, o lo que uno va colocando en cada placeholder, se le coloca "name" y el nombre correspondiente a cada casilla. lo otro. esto está separado en columnas de 6, para que se genere un orden -->
+                                <input type="text" class="form-control" id="telefono" name="telefono" aria-describedby="nombre-ayuda">
+                                <div id="nombre-ayuda" class="form-text"></div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="correo" class="form-label titulos-form">Correo electrónico</label>
+                                <!-- para que despliegue los nombres en el navegador, o lo que uno va colocando en cada placeholder, se le coloca "name" y el nombre correspondiente a cada casilla. lo otro. esto está separado en columnas de 6, para que se genere un orden -->
+                                <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp">
+                                
+                                <div id="emailHelp" class="form-text">Nos contactaremos directamente en este correo</div>
+                              </div>
+                        </div>
+                        <!-- le coloqué el no gutters para sacar el padding que quedaba en los lados -->
+                        <!-- el g-0 significa "no-gutters" -->
+                        <div class="col-lg-6 col-md-6 g-0">
+                            <div class="mb-3 g-0">
+                                <label for="" class="form-label titulos-form">Motivo de contacto</label>
+                                <select class="form-select form-select-lg" name="motivo-contacto" id="">
+                                    <option selected>Seleccionar</option>
+                                    <option value="donaciones">Donaciones</option>
+                                    <option value="transparencia">Transparencia</option>
+                                    <option value="quiero-adoptar">Quiero Adoptar</option>
+                                    <option value="mascota-en-adopcion">Tengo una mascota para adopción</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 align-self-center link-mora">
+                            <a class="text-decoration-none">acá podrían ir unos checkbox ajja</a>
+                        </div>
+                       
+                        <!-- la etiqueta comentarios la dejo a 12 col sólo por temas de orden. en caso de que hayan campos o placeholders impares, en lo posble dejarlos a 12 col y finalmente el textarea a 12 igual. para que no se vea desordenado -->
+                        <label for="" class="titulos-form ">Comentarios</label>
+                        <textarea class="titulos-form" name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
+                        <div class="col-lg-6 col-md-6 pt-2">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label link-mora" name="ok" for="exampleCheck1">Acepto los   <a class="text-decoration-none" href="#">términos y condiciones</a></label>
+                              </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary bg-morado">Contacto</button>
+                      </form>
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
+        </div>
+      </div>
+    </div>
+    
+
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

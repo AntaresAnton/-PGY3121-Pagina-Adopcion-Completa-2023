@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Adopta una mascota</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- esta es la hoja de estilos propia, personalizada -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- esto es de font awesome pro -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+</head>
+
+<body>
+
+    <div class="topbar pt-3">
+        <div class="container ">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-md-6 ">
+                    <ul class="nav">
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-regular fa-envelope"></i> adopta@adopta.cl</b></a></li>
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-solid fa-phone"></i> adopta@adopta.cl</b></a></li>
+                        <li><a class="text-decoration-none px-2" href="#"><b><i class="fa fa-solid fa-street-view"></i> adopta@adopta.cl</b></a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 align-items-end">
+                    <ul class="nav">
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-facebook-f"></i> </a></li>
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-instagram"></i> </a></li>
+                        <li><a class="text-decoration-none px-3" href="#"> <i class="fa fa-brands fa-twitter"></i> </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 pato">
+                    <ul class="nav ">
+                        <li class="nav-item dropdown ">
+                            <!-- acá por orden de clases es lo siguiente: la primera clase es para que no aparezca con decoraciones el enlace, la otra clase es para que se comporte como menú desplegable y muestre la flecchita que sirve para identificarlo (el triangulito que sale en el menú) -->
+                            <!-- el ID anunciosdropdown es un id que uno le asigna para que pueda "llamar" al div de más abajo (al aria-labelledby) -->
+                            <!-- el "data-bstoggle" lo que hace es que llame a la librería de js de bootstrap. esto es muy similar (por no decir igual) al atributo .toggle() de Jquery. en simples palabras, convierte un botón para que active o desactive algo (como un switch) -->
+                            <a class="text-decoration-none" href="#" id="userpato" data-bs-toggle="dropdown" aria-haspopup="true" aria-bs-expanded="false">
+                                <p><i class="fa fa-regular fa-user"></i> Bienvenido, <span>Patricio</span> <i class="fa fa-solid fa-caret-down"></i></p>
+                            </a>
+                            <div class="dropdown-menu bg-pato morado" aria-labelledby="userpato">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Donaciones</a>
+                                <a class="dropdown-item" href="#michimado">Michimado del Mes</a>
+                            </div>
+                        </li>
+                        <!-- fin del nav-item dropdown -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <header>
+        <div class="barra-ppal navbar navbar-expand-lg">
+           <div class="container">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <!-- este logo se oculta en computadores y se muestra en celulares -->
+                 <a class="text-decoration-none mobile" href="index.html"><span class="fund text-capitalize">fundación <br><span class="adop text-uppercase">adopta</span></span></a>
+                 <!-- esta sería la barra normalita, con la diferencia que al logo de abajo se le aplica un media query para que se oculte cuando estemos en versiones mobile y se muestre en versiones grandes -->
+               <div class="row justify-content-between collapse navbar-collapse" id="navbarTogglerDemo01">
+                   <div class="col-lg-2 col-md-2">
+                       <div class="logo text-center">
+                           <a class="text-decoration-none laptops" href="index.html"><span class="fund text-capitalize">fundación <br><span class="adop text-uppercase">adopta</span></span></a>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3"></div>
+                   <div class="col-lg-7 col-md-7 align-self-center">
+                       <ul class="nav justify-content-between text-capitalize text-center">
+                           <li><a class="text-decoration-none link-menu" href="index.html">inicio</a></li>
+                           <!-- inicio del nav-item dropdown -->
+                        <li class="nav-item dropdown">
+                            <!-- acá por orden de clases es lo siguiente: la primera clase es para que no aparezca con decoraciones el enlace, la otra clase es para que se comporte como menú desplegable y muestre la flecchita que sirve para identificarlo (el triangulito que sale en el menú) -->
+                            <!-- el ID anunciosdropdown es un id que uno le asigna para que pueda "llamar" al div de más abajo (al aria-labelledby) -->
+                            <!-- el "data-bstoggle" lo que hace es que llame a la librería de js de bootstrap. esto es muy similar (por no decir igual) al atributo .toggle() de Jquery. en simples palabras, convierte un botón para que active o desactive algo (como un switch) -->
+                            <a class="text-decoration-none dropdown-toggle" href="#" id="anunciosdropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-bs-expanded="false">
+                            Buscan un hogar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="anunciosdropdown">
+                                <a class="dropdown-item" href="#">Perritos</a>
+                                <a class="dropdown-item" href="#">Gatitos</a>
+                                <a class="dropdown-item" href="#michimado">Michimado del mes</a>
+                            </div>
+                        </li>
+                        <!-- fin del nav-item dropdown -->
+                           <li><a class="text-decoration-none link-menu" href="#adopta">adopta</a></li>
+                           <li><a class="text-decoration-none link-menu" href="#donaciones">Dona Ahora</a></li>
+                           <li><a class="text-decoration-none link-menu" href="contacto.html">Contacto</a></li>
+                           
+                       </ul>
+                   </div>
+               </div><!-- row justify -->
+           </div><!-- container -->
+       </div><!-- barra ppal -->
+     </header><!-- fin header -->
+
+<div class="slider py-5">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+
+                <div class="row pt-3">
+                    <div class="col-lg-3">
+                        <img class="w-75" src="img/colorillo.png" alt="">
+                    </div>
+                </div>
+                <p class="display-3 naranjo t1">¿estás buscando un <br><b>compañero</b><br> peludo y amoroso?</p>
+                <p class="t-verde t2">¡Tenemos la solución perfecta para ti!</p>
+                <p class="t3">Tenemos varios gatitos adorables que están buscando un hogar amoroso y cariñoso. Son juguetones, curiosos y muy cariñosos.</p>
+            </div>
+            <div class="col-lg-5 align-self-center">
+                <img class="w-100" src="img/gato-bg.png" alt="">
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- slider que no es slider -->
+
+<div id="donaciones" class="donaciones py-4 mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <p class="t-morado t4 text-capitalize display-5">donaciones</p>
+                <p>¡Ayuda a salvar a los animales necesitados! Cada año, miles de animales son abandonados, maltratados y enfermos. Pero tú puedes hacer la diferencia. Dona hoy para ayudar a salvar a estos animales y darles una segunda oportunidad en la vida.</p>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-4 col-md-4 align-self-center text-center">
+                <button class="bg-morado btn btn-success w-100 text-capitalize">donar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="buscan_un_hogar" class="perritos py-5">
+    <div class="container pt-3">
+        <div class="row justify-content-between">
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-8 col-md-8 text-center">
+                <p class="display-6 naranjo t4">Esperan un hogar</p>
+                <p class="pb-3">No esperes más para darle a un michi o un perrito la oportunidad de tener un hogar amoroso. ¡Adopta hoy mismo y cambia la vida de un animalito para siempre!</p>
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="perrin">
+                    <img class="w-100" src="img/adopta1.jpg" alt="">
+                </div>
+                <div class="descripcion-msc text-center">
+                    <p class="texto-pequeno"><span class="calendario"><i class="fa fa-regular fa-calendar"></i> </span>Nacimiento: 2022</p>
+                    <p class=" text-capitalize n-animal">Mali</p>
+                    <p class="desc-animal">Este pequeño perro es una bola de pelaje suave y esponjoso. Sus ojos brillantes y curiosos siempre están buscando algo nuevo para explorar y jugar. </p>
+                    <a href="esperan-un-hogar/mali.html"><button class="btn btn-primary mb-3 info-animal"><i class="fa fa-solid fa-paw"></i> Más Info <i class="fa fa-solid fa-paw"></i></button></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="perrin">
+                    <img class="w-100" src="img/adopta4.jpg" alt="">
+                </div>
+                <div class="descripcion-msc text-center">
+                    <p class="texto-pequeno"><span class="calendario"><i class="fa fa-regular fa-calendar"></i> </span>Nacimiento: 2022</p>
+                    <p class=" text-capitalize n-animal">Volkoff</p>
+                    <p class="desc-animal">Este pequeño perro es una bola de pelaje suave y esponjoso. Sus ojos brillantes y curiosos siempre están buscando algo nuevo para explorar y jugar. </p>
+                    <a href="esperan-un-hogar/volkoff.html"><button class="btn btn-primary mb-3 info-animal"><i class="fa fa-solid fa-paw"></i> Más Info <i class="fa fa-solid fa-paw"></i></button></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="perrin">
+                    <img class="w-100" src="img/adopta2.jpg" alt="">
+                </div>
+                <div class="descripcion-msc text-center">
+                    <p class="texto-pequeno"><span class="calendario"><i class="fa fa-regular fa-calendar"></i> </span>Nacimiento: 2022</p>
+                    <p class=" text-capitalize n-animal">Lepi</p>
+                    <p class="desc-animal">Este pequeño perro es una bola de pelaje suave y esponjoso. Sus ojos brillantes y curiosos siempre están buscando algo nuevo para explorar y jugar. </p>
+                    <a href="esperan-un-hogar/lepi.html"><button class="btn btn-primary mb-3 info-animal"><i class="fa fa-solid fa-paw"></i> Más Info <i class="fa fa-solid fa-paw"></i></button></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="perrin">
+                    <img class="w-100" src="img/adopta3.jpg" alt="">
+                </div>
+                <div class="descripcion-msc text-center">
+                    <p class="texto-pequeno"><span class="calendario"><i class="fa fa-regular fa-calendar"></i> </span>Nacimiento: 2022</p>
+                    <p class=" text-capitalize n-animal">Roki</p>
+                    <p class="desc-animal">Este pequeño perro es una bola de pelaje suave y esponjoso. Sus ojos brillantes y curiosos siempre están buscando algo nuevo para explorar y jugar. </p>
+                    <a href="esperan-un-hogar/roki.html"><button class="btn btn-primary mb-3 info-animal"><i class="fa fa-solid fa-paw"></i> Más Info <i class="fa fa-solid fa-paw"></i></button></a>
+                </div>
+            </div>
+
+        </div><!-- fin row -->
+    </div><!-- fin container -->
+</div><!-- fin perritos -->
+<hr>
+<div class="mini-gallery py-4 bg-celeste">
+    <div class="container">
+        <div class="row">
+            <div class="anuncio n-animal text-center py-3">
+                <p>Otras mascotas que necesitan mucho cariño</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/gato-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/perro-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/gato-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/perro-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/gato-3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 mb-3">
+                <div class="fotos-gal text-center">
+                    <img class="w-100" src="img/galeria/perro-3.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+  <hr>
+
+<div id="adopta" class="adoptaD py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 text-center">
+                <img class="w-75" src="img/gato-bg.png" alt="">
+            </div>
+            <div class="col-lg-5 col-md-5 align-self-center justify">
+                <p class="display-6 morado t4">Adopta :D</p>
+                <p>No importa si eres un dueño experimentado o si es tu primera vez adoptando un gato, nuestros gatitos están listos para ser parte de tu familia. Todos nuestros gatitos han sido examinados por veterinarios y están al día con sus vacunas y tratamientos.</p>
+                <button class="bg-morado btn btn-success w-100 text-capitalize"><i class="fa fa-solid fa-paw"></i> Más información <i class="fa fa-solid fa-paw"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="michimado" class="michimado py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <p class="display-2 t-morado t4">MICHImado</p>
+                <div class="row">
+                    <div class="col-lg-6 text-end">
+                        <img class="w-100 " src="img/coloritos.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class=" display-4 t-morado t4">del mes</p>
+                    </div>
+                </div>
+                <div class="datos">
+                    <p><b>nombre: </b>Vladimir II</p>
+                    <p><b>pasatiempo: </b>Dormir</p>
+                    <p><b>está con nosotros desde: </b>Diciembre 2021 (2 años)</p>
+                    <p>Gato asilvestrado que con mucho cariño logró adaptarse al paraíso terrenal, le gusta jugar con
+                        su otro amigo Karl. y Franz</p>
+                        <div class="botonera text-end">
+                            <button class="btn btn-success w-50 rosado">Apadrinar :D</button>
+                        </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <img class="w-75" src="img/tele.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div id="suscribete" class="suscripcion mb-3 align-self-center">
+    <div class="container rosado pt-4">
+        <div class="row ">
+            <div class="col-lg-6 text-center">
+                <p class="display-4 t4 g-0">Suscríbete</p>
+            </div>
+            <div class="col-lg-4 col-md-4 align-self-cente">
+                <div class="form-group">
+                    <label for=""></label>
+                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+                  </div>
+            </div>
+            <div class="col-lg-2 align-self-center">
+                <button class="btn btn-primary bg-morado">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+  <footer class="footer text-center">
+    <!-- place footer here -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p><b>2023 | Adopta | sitio para adopción de mascotas</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    
+  </script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
+
+
